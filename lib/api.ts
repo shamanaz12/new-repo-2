@@ -1,6 +1,6 @@
 import { Task } from "../types";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 // Helper function to get auth token from wherever it's stored
 const getAuthToken = (): string | null => {
