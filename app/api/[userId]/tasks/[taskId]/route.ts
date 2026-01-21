@@ -8,7 +8,7 @@ export async function GET(
     const { userId, taskId } = params;
     
     // Get the backend API URL from environment
-    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://taskflow-api-production-46a8.up.railway.app';
     
     // Forward the request to the backend
     const backendResponse = await fetch(`${BACKEND_API_URL}/api/${userId}/tasks/${taskId}`, {
@@ -42,7 +42,7 @@ export async function PUT(
     const { userId, taskId } = params;
     
     // Get the backend API URL from environment
-    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://taskflow-api-production-46a8.up.railway.app';
     
     // Get the request body
     const body = await request.json();
@@ -80,7 +80,7 @@ export async function DELETE(
     const { userId, taskId } = params;
     
     // Get the backend API URL from environment
-    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://taskflow-api-production-46a8.up.railway.app';
     
     // Forward the request to the backend
     const backendResponse = await fetch(`${BACKEND_API_URL}/api/${userId}/tasks/${taskId}`, {
@@ -114,7 +114,7 @@ export async function PATCH(
     const { userId, taskId } = params;
     
     // Get the backend API URL from environment
-    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://taskflow-api-production-46a8.up.railway.app';
     
     // Forward the request to the backend for toggling completion
     const backendResponse = await fetch(`${BACKEND_API_URL}/api/${userId}/tasks/${taskId}/complete`, {

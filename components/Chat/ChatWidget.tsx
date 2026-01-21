@@ -40,7 +40,7 @@ export default function ChatWidget() {
     return id;
   };
 
-  const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
+  const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || 'https://taskflow-api-production-46a8.up.railway.app';
 
   const send = async () => {
     if (!input.trim() || loading) return;
